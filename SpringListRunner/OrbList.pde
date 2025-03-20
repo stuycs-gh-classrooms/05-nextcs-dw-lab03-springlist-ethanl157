@@ -62,16 +62,9 @@ class OrbList {
     SPRING_LEGNTH apart horizontally.
     =========================*/
   void populate(int n, boolean ordered) {
-    
-    OrbNode oIter1 = front;
-    OrbNode oIter2 = front.next;
-    while (oIter1.next != null) {
-      oIter1 = null;
-      oIter1 = oIter2.next;
-      oIter2 = oIter1.next;
+    if (front != null) {
+      front = null;
     }
-    oIter1 = null;
-    
     
      while (n > 0) {
        if (front == null) {
